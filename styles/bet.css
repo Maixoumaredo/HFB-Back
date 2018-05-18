@@ -1,0 +1,19 @@
+input[type=submit]
+{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 0;
+    color: #fff;
+}
+
+input[type=submit].bet-left
+{
+    background-color: red;
+}
+
+input[type=submit].bet-right
+{
+    background-color: blue;
+}

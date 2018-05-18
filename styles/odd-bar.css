@@ -1,0 +1,29 @@
+.odd-bar
+{
+    width: 400px;
+    height: 20px;
+    background: grey;
+    position: relative;
+}
+
+.odd-bar_left-side
+{
+    background: blue;
+    height: inherit;
+    position: absolute;
+    left: 0;
+
+    animation-name: expense-left;
+    animation-duration: 1s;
+}
+
+.odd-bar_right-side
+{
+    background: red;
+    height: inherit;
+    position: absolute;
+    right: 0;
+
+    animation-name: expense-right;
+    animation-duration: 1s;
+}

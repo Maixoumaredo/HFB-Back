@@ -1,0 +1,32 @@
+.health-bar-left, .health-bar-right
+{
+    width: 20px;
+    height: 400px;
+    background: grey;
+    position: relative;
+    display: inline-block;
+}
+
+.health-bar-left_fill
+{
+    background: blue;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+.health-bar-right_fill
+{
+    background: red;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
