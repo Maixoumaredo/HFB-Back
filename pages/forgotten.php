@@ -20,7 +20,7 @@
         <button>Index</button>
     </a>
     <?php if(isset($_SESSION['pseudo'])): ?>
-        <a href="../pages/fight.php">
+        <a href="../pages/fight-1v1.php">
             <button>Fight</button>
         </a>
     <?php endif ?>

@@ -13,6 +13,9 @@
     $query1->bindParam(':id', $_SESSION['id']);
     $query1->execute();
     $user = $query1->fetchAll();
+    echo '<pre>';
+    var_dump($_SESSION['wallet']);
+    echo '</pre>';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +29,7 @@
     <a href="../index.php">
         <button>Index</button>
     </a>
-    <a href="../pages/fight.php">
+    <a href="../pages/start.php">
         <button>Fight</button>
     </a>
     <?php if(!isset($_SESSION['pseudo'])): ?>
