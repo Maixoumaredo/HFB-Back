@@ -3,7 +3,7 @@
     { 
         session_start(); 
     }
-    require '../../require/1v1_function.php';  
+    require '../../require/bet.php';  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,15 +40,8 @@
     <H1>FIGHT</H1>
     <H1>BET</H1>    
     <p>Your wallet : <?= $_SESSION['wallet'] ?></p>
-    <p>Hero 1 odd : <?= $_SESSION['hero1_odd'] ?></p>
-    <p>Hero 2 odd : <?= $_SESSION['hero2_odd'] ?></p>
 
-    <div class="odd-bar js-odd-bar">
-        <div class="odd-bar_left-side js-odd-bar_left-side" data-odd="<?= $_SESSION['hero1_odd'] ?>"></div>
-        <div class="odd-bar_right-side js-odd-bar_right-side" data-odd="<?= $_SESSION['hero2_odd'] ?>"></div>
-    </div>
-
-    <form action="result-1v1.php" method="post">
+    <form action="#" method="post">
         <label for="bet-amount">Enter an amount to bet :</label>
         <input type="number" name="bet-amount" value="<? $_POST['bet-amount'] ?>">
         <br/>
@@ -56,6 +49,5 @@
         <input type="submit" class="bet bet-right" name="bet-right" value="Bet on the right">
     </form>
 
-        <script src="../../scripts/odd-bar.js"></script>
 </body>
 </html>

@@ -44,10 +44,5 @@
         <button>1V1</button>
     </a>
 
-    <h1>2V2</h1>
-    <a href="fight/fight-2v2.php">
-        <button>2V2</button>
-    </a>
-
 </body>
 </html>
